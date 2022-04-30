@@ -30,11 +30,32 @@ public class Examenfinal {
          
           switch (opcion) {
               
-              
+              case 1:
+                  int numero1;
+                  int numero2;
+                  Scanner numeros = new Scanner(System.in);
+                  System.out.println("Ingrese el primer número");
+                  numero1 = numeros.nextInt();
+                  System.out.println("Ingrese el segundo número");
+                  numero2 = numeros.nextInt();
+                  
+                  if(numero1>numero2){
+                      System.out.println("El número mayor es:" +numero1);
+                      
+                  }else{
+                     System.out.println("El número mayor es:" +numero2); 
+                  }
+                  break;
+                  
               case 4:
                 salir=true;
                 break;
           }
     }
     }   
+
+   
+
+
+
 }
