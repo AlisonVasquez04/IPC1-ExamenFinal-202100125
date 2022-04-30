@@ -19,6 +19,7 @@ public class Examenfinal {
         Scanner sn = new Scanner(System.in);
         boolean salir = false;
         int opcion;
+        
         while(!salir){
             System.out.println("1. Problema 1 ");
             System.out.println("2. Problema 2 ");
@@ -60,6 +61,67 @@ public class Examenfinal {
                   }
                       System.out.println();    
                   }
+                  break;
+              case 3:
+                  
+                  //Como no es necesario pedir los datos al usuario
+                  // Se ddefine que el mismo programa seleccionó los datos
+                  //por ende se eligieron las vacas que producian la mayor de leche
+                  // y no sobrepasarse del peso del camión 
+                  
+                  //8 vacas
+                  int v1, v2, v3, v4, v6;
+                  int peso;
+                  int l1, l2, l3, l4, l6;
+                  int leche;
+                  v1= 223;
+                  v2 = 243;
+                  v3 = 100;
+                  v4 = 200;
+                  v6 = 155;
+                  peso =  v1 + v2+ v3+ v4+ v6;
+                  l1 = 30;
+                  l2= 34;
+                  l3 = 28;
+                  l4 = 45;
+                  l6= 50; 
+                  leche = l1 + l2 +  l3 +  l4 +  l6;
+                  if (peso>1000){
+                      System.out.println("El camión lleva sobrepeso");
+                  }else{
+                       System.out.println("Produccion total en L:" +leche);
+                  }
+                  //10 vacas
+                   int va1, va2, va3, va4, va5, va6, va7, va10;
+                  int peso2;
+                  int le1, le2, le3, le4, le5, le6, le7, le10;
+                  int leche2;
+                  va1= 340;
+                  va2 = 355;
+                  va3 = 223;
+                  va4 = 243;
+                  va5 = 130;
+                  va6 = 240;
+                  va7 = 260;
+                 
+                  va10 = 130;
+                  peso2 =  va1 + va2 +  va3 +  va4 +  va5 +  va6 +  va7 + va10;
+                  le1 = 45;
+                  le2= 50;
+                  le3 = 34;
+                  le4 = 39;
+                  le5 = 29;
+                  le6= 40;
+                  le7 = 30;
+                 
+                  le10 = 1;
+                  leche2 = le1 + le2 +  le3 +  le4 +  le5 + le6 +  le7 +  le10;
+                  if (peso2>2000){
+                      System.out.println("El camión lleva sobrepeso");
+                  }else{
+                       System.out.println("Produccion total en L:" +leche2);
+                  }
+                  
                   break;
               case 4:
                 salir=true;
