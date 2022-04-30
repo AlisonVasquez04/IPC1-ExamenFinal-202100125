@@ -46,7 +46,21 @@ public class Examenfinal {
                      System.out.println("El número mayor es:" +numero2); 
                   }
                   break;
-                  
+              case 2:
+                  int numero;
+                  Scanner piramide = new Scanner(System.in);
+                  System.out.println("Ingrese el primer número");
+                  numero = piramide.nextInt();
+                  for (int i=0; i<numero; i++){
+                      for (int j =0; j> numero-i; j++){
+                      System.out.println("  ");
+                      }
+                        for(int k=0; k<i; k++){
+                        System.out.print("*");
+                  }
+                      System.out.println();    
+                  }
+                  break;
               case 4:
                 salir=true;
                 break;
